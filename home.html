@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  
+  <nav class="menu-principal">
+    <ul>
+      <li><a href="home.html"></a></li>
+
+    </ul>
+  </nav>
+
+  
+  <div class="menu-tres-pontinhos">
+    <button class="menu-btn" onclick="toggleMenu()">=</button>
+    <div class="menu-dropdown" id="dropdownMenu">
+      <a href="home.html">Página Inicial</a>
+      <a href="sobrenos.html">Sobre Nós</a>
+      <a href="mapeamento.html">Mapeamento</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    
+    window.onclick = function(e) {
+      if (!e.target.matches('.menu-btn')) {
+        const menu = document.getElementById("dropdownMenu");
+        if (menu && menu.style.display === "block") {
+          menu.style.display = "none";
+        }
+      }
+    };
+  </script>
+
+</body>
+</html>

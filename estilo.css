@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Menu principal (como na imagem) */
+  .menu-principal {
+    background-color: #1e3a70;
+    padding: 20px 50px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-principal li {
+    margin-right: 20px;
+  }
+  
+  .menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu-principal a:hover {
+    text-decoration: underline;
+  }
+  
+  .search-icon {
+    font-size: 18px;
+  }
+  
+  /* Menu três pontinhos */
+  .menu-tres-pontinhos {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  
+  .menu-dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu-dropdown a:hover {
+    background-color: #f2f2f2;
+  }
