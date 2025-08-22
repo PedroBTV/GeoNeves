@@ -92,3 +92,43 @@ body {
   width: 100%;    /* Ajusta o tamanho */
   height: auto;
 }
+.textodireita {
+  text-align: left;
+}
+
+.container-pai {
+    display: flex;
+    justify-content: flex-start; /* A mágica acontece aqui! */
+    
+    /* Apenas para visualização */
+    border: 0px dashed gray;
+    padding: 10px;
+
+}
+
+.bloco-de-texto {
+    width: 400px; /* Um tamanho fixo pro nosso bloco */
+    text-align: left;
+    /* Apenas para visualização */
+
+    padding: px;
+    border: 1px solid #ccc;
+}
+.container-paii {
+    display: flex;
+    justify-content: flex-end; /* A mágica acontece aqui! */
+    
+    /* Apenas para visualização */
+    border: 0px dashed gray;
+    padding: 10px;
+
+}
+
+.bloco-de-textoi {
+    width: 400px; /* Um tamanho fixo pro nosso bloco */
+
+    /* Apenas para visualização */
+
+    padding: px;
+    border: 1px solid #ccc;
+}
