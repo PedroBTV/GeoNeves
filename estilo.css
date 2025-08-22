@@ -1,13 +1,23 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url(PI.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #cccccc;
+
   }
   
   /* Menu principal (como na imagem) */
   .menu-principal {
     background-color: #1e3a70;
     padding: 20px 50px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   
   .menu-principal ul {
@@ -39,8 +49,10 @@ body {
   /* Menu três pontinhos */
   .menu-tres-pontinhos {
     position: fixed;
-    top: 10px;
+    top: -39px;
     left: 10px;
+    position: relative;
+
   }
   
   .menu-btn {
@@ -73,4 +85,8 @@ body {
   
   .menu-dropdown a:hover {
     background-color: #f2f2f2;
+  }
+  .botaomenu{
+    padding-right: 150px;
+    padding-top: 2px;
   }
