@@ -1,95 +1,94 @@
+/* Zera todo o espaçamento padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(PI.png);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-color: #cccccc;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cccccc;
+  width: 100%;
+}
 
-    
-  }
-  
-  /* Menu principal (como na imagem) */
-  .menu-principal {
-    background-color: #1e3a70;
-    padding: 10px 50px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  
-  .menu-principal ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .menu-principal li {
-    margin-right: 20px;
-  }
-  
-  .menu-principal a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .menu-principal a:hover {
-    text-decoration: underline;
-    
-  }
-  
-  .search-icon {
-    font-size: 18px;
-  }
-  
-  /* Menu três pontinhos */
-  .menu-tres-pontinhos {
-    position: fixed;
-    top: -39px;
-    left: 10px;
-    position: relative;
+/* Menu principal */
+.menu-principal {
+  background-color: #1e3a70;
+  padding: 10px 0; /* Reduzi o padding */
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 
-  }
-  
-  .menu-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .menu-dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    margin-top: 5px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    min-width: 160px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    z-index: 999;
-  }
-  
-  .menu-dropdown a {
-    display: block;
-    padding: 10px 15px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .menu-dropdown a:hover {
-    background-color: #f2f2f2;
-  }
-  .botaomenu{
-    padding-right: 150px;
-    padding-top: 2px;
-  }
+/* Links do menu principal */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal li {
+  margin-right: 10px;
+}
+
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-principal a:hover {
+  text-decoration: underline;
+}
+
+/* Menu de três pontinhos */
+.menu-tres-pontinhos {
+  position: absolute; /* Fixamos o posicionamento */
+  top: 0px; /* Agora ele fica certinho */
+  left: 15px;
+  z-index: 1000; /* Garante que o botão fique acima da imagem */
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Dropdown do menu */
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Centraliza e remove espaçamento extra da imagem */
+.fundo img {
+  display: block; /* Remove espaços automáticos */
+  width: 100%;    /* Ajusta o tamanho */
+  height: auto;
+}
