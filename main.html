@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+<style>
+        @font-face {
+            /* 1. Dê um "apelido" para a fonte. Pode ser o nome que você quiser. */
+            font-family: 'Minha Fonte Customizada';
+
+            /* 2. Indique o CAMINHO para o arquivo da fonte. */
+            /* Este caminho significa: "A partir deste HTML, entre na pasta 'fonts'
+               e pegue o arquivo 'MinhaFonte-Regular.woff2'". */
+            src: url(codec-pro.italic.ttf);
+        }
+    
+</style>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="main.html">GeoNeves</a></li>
+
+      </ul>
+    </nav>
+
+
+    <div class="menu-tres-pontinhos">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div class="menu-dropdown" id="dropdownMenu">
+        <a href="main.html">Página Inicial</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="mapeamento.html">Mapeamento</a>
+      </div>
+    </div>
+    <div class="fundo">
+      <img src="PI.png" alt="" > 
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+
+    
+      window.onclick = function(e) {
+        if (!e.target.matches('.menu-btn')) {
+        const menu = document.getElementById("dropdownMenu");
+          if (menu && menu.style.display === "block") {
+            menu.style.display = "none";
+          }
+        }
+      };
+    </script> 
+
+
+<div class="container-principal">
+
+    <div class="bloco-esquerda">
+        <h2 class="fonte60">Ribeirão Das Neves</h2>
+        <h1>&nbsp;&nbsp;&nbsp;</h1>
+        <p class="fonte29">
+          Ribeirão das Neves começou como um pequeno povoado rural no século XIX, em torno de fazendas e trilhas que ligavam a região ao centro de Minas Gerais. O nome vem de um ribeirão que cortava a área e das frequentes neblinas (ou "neves") que cobriam as matas da região.
+Com o tempo, a cidade cresceu principalmente a partir da década de 1950, acompanhando a expansão da Região Metropolitana de Belo Horizonte. Em 1953, Ribeirão das Neves se tornou oficialmente um município.
+Durante muitos anos, a cidade ficou conhecida por abrigar grandes unidades prisionais. Mas, além disso, Neves é feita por sua gente trabalhadora, sua cultura popular e seus bairros que continuam se desenvolvendo com escolas, praças, comércios e iniciativas comunitárias.
+Hoje, é uma cidade viva e diversa, que busca crescer com mais oportunidades, participação cidadá e consciência sobre seu territorio
+
+</p>
+    </div>
+
+    <div class="bloco-direita">
+        <h2 class="fonte60">Mapa De Neves</h2>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <p>
+            
+              <img src="Captura de tela 2025-08-22 204706.png" alt="" width="680" > 
+        </p>
+    </div>
+
+</div>
+  
+  </body>
+</html>

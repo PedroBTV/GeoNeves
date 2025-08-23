@@ -1,8 +1,82 @@
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+<style>
+        @font-face {
+            /* 1. Dê um "apelido" para a fonte. Pode ser o nome que você quiser. */
+            font-family: 'Minha Fonte Customizada';
 
-    </head>
-    <body>
+            /* 2. Indique o CAMINHO para o arquivo da fonte. */
+            /* Este caminho significa: "A partir deste HTML, entre na pasta 'fonts'
+               e pegue o arquivo 'MinhaFonte-Regular.woff2'". */
+            src: url(codec-pro.italic.ttf);
+        }
+    
+</style>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="main.html">GeoNeves</a></li>
+
+      </ul>
+    </nav>
+
+
+    <div class="menu-tres-pontinhos">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div class="menu-dropdown" id="dropdownMenu">
+        <a href="main.html">Página Inicial</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="https://www.google.com">Mapeamento</a>
         
-    </body>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+
+    
+      window.onclick = function(e) {
+        if (!e.target.matches('.menu-btn')) {
+        const menu = document.getElementById("dropdownMenu");
+          if (menu && menu.style.display === "block") {
+            menu.style.display = "none";
+          }
+        }
+      };
+    </script> 
+
+
+<div class="container-principal">
+
+    <div class="bloco-esquerda">
+        <h2 class="fonte60">Sobre O Site</h2>
+        <h1>&nbsp;&nbsp;&nbsp;</h1>
+        <p class="fonte29">
+        Explore Ribeirão das Neves de uma forma diferente! Este site apresenta um mapa interativo com pontos importantes e curiosos da cidade, conectando o cotidiano local aos conteúdos da BNCC. A proposta une Geografia e cidadania, incentivando uma leitura crítica do território. Navegue, descubra e repense a cidade onde vivemos!
+</p>
+    </div>
+
+    <div class="bloco-direita">
+        <h2 class="fonte60">Galeria de expêriencias</h2>
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <p>
+            
+              <img src="Imagem do WhatsApp de 2025-08-22 à(s) 22.03.35_772241f4.jpg" alt="" width="680" > 
+              <img src="Imagem do WhatsApp de 2025-08-22 à(s) 22.12.02_63f9b70f.jpg" alt="" width="680" > 
+              <img src="Imagem do WhatsApp de 2025-08-22 à(s) 22.12.02_638007dd.jpg" alt="" width="680" > 
+              <img src="Imagem do WhatsApp de 2025-08-22 à(s) 22.12.03_1b152938.jpg" alt="" width="680" > 
+
+
+
+        </p>
+    </div>
+
+</div>
+  
+  </body>
 </html>
