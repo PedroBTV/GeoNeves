@@ -142,15 +142,17 @@ body {
     display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
    /* Isso empurra os blocos para as extremidades (um pra cada lado). */
     gap: 62px;                      /* Cria um espaço seguro entre eles, caso a tela fique apertada. */
+    padding: 25px;
 }
 
 /* Estilo que será aplicado a AMBOS os blocos */
 .bloco-esquerda,
 .bloco-direita {
-    width: 48%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
+
+    width: 200%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
     padding: 30px; /* Um espaçamento interno para o texto não colar na borda. */
     border: 2px solid #1e3a70; /* Uma bordinha pra gente visualizar os blocos. */
-    border-radius: 2px; /* Bordas arredondadas pra ficar mais bonito. */
+    border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
 }
 .fonte29 {
 font-size: 25px;
