@@ -8,9 +8,10 @@
 /* Corpo da página */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #cccccc;
+  font-family: 'Minha Fonte Customizada', sans-serif;
+  color: #2a044a;
   width: 100%;
+  background-color: #9a9a9a;
 }
 
 /* Menu principal */
@@ -92,9 +93,6 @@ body {
   width: 100%;    /* Ajusta o tamanho */
   height: auto;
 }
-.textodireita {
-  text-align: left;
-}
 
 .container-pai {
     display: flex;
@@ -111,9 +109,15 @@ body {
     text-align: left;
     /* Apenas para visualização */
 
-    padding: px;
+    padding: 0px;
     border: 1px solid #ccc;
 }
+
+
+/* parte de baixo*/
+
+
+
 .container-paii {
     display: flex;
     justify-content: flex-end; /* A mágica acontece aqui! */
@@ -124,11 +128,33 @@ body {
 
 }
 
-.bloco-de-textoi {
+.bloco-de-textoii {
     width: 400px; /* Um tamanho fixo pro nosso bloco */
 
     /* Apenas para visualização */
 
-    padding: px;
+    padding: 0px;
     border: 1px solid #ccc;
+}
+
+/* Estilo para o container principal */
+.container-principal {
+    display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
+   /* Isso empurra os blocos para as extremidades (um pra cada lado). */
+    gap: 00px;                      /* Cria um espaço seguro entre eles, caso a tela fique apertada. */
+}
+
+/* Estilo que será aplicado a AMBOS os blocos */
+.bloco-esquerda,
+.bloco-direita {
+    width: 48%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
+    padding: 10px; /* Um espaçamento interno para o texto não colar na borda. */
+    border: 0px solid #ccc; /* Uma bordinha pra gente visualizar os blocos. */
+    border-radius: 0px; /* Bordas arredondadas pra ficar mais bonito. */
+}
+.fonte29 {
+font-size: 29px;
+}
+.fonte60 {
+font-size: 30px;
 }
