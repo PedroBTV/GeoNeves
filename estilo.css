@@ -148,7 +148,7 @@ body {
 .bloco-esquerda,
 .bloco-direita {
     width: 48%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
-    padding: 10px; /* Um espaçamento interno para o texto não colar na borda. */
+    padding: 20px; /* Um espaçamento interno para o texto não colar na borda. */
     border: 2px solid #ccc; /* Uma bordinha pra gente visualizar os blocos. */
     border-radius: 2px; /* Bordas arredondadas pra ficar mais bonito. */
 }
