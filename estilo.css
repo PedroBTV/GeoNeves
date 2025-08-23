@@ -149,8 +149,8 @@ body {
 .bloco-direita {
     width: 48%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
     padding: 10px; /* Um espaçamento interno para o texto não colar na borda. */
-    border: 0px solid #ccc; /* Uma bordinha pra gente visualizar os blocos. */
-    border-radius: 0px; /* Bordas arredondadas pra ficar mais bonito. */
+    border: 2px solid #ccc; /* Uma bordinha pra gente visualizar os blocos. */
+    border-radius: 2px; /* Bordas arredondadas pra ficar mais bonito. */
 }
 .fonte29 {
 font-size: 25px;
