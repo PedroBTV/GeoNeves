@@ -148,7 +148,7 @@ body {
 
 /* Estilo para o container principal */
 .container-principal {
-    display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
+                     /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
    /* Isso empurra os blocos para as extremidades (um pra cada lado). */
     gap: 62px;                      /* Cria um espaço seguro entre eles, caso a tela fique apertada. */
     padding: 25px;
@@ -157,11 +157,18 @@ body {
 /* Estilo que será aplicado a AMBOS os blocos */
 .bloco-esquerda,
 .bloco-direita {
-
-    width: 200%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
+  display: flex; 
+    width: 100%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
     padding: 30px; /* Um espaçamento interno para o texto não colar na borda. */
     border: 2px solid #1e3a70; /* Uma bordinha pra gente visualizar os blocos. */
     border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
+}
+.bloco-esquerda1{
+  width: 100%;
+  border: 2px solid #1e3a70;
+  border-radius: 20px;
+  padding: 30px;
+  d
 }
 .fonte29 {
   font-size: 30px;
