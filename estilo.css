@@ -21,8 +21,9 @@ body {
   margin: 0;
   font-family: 'Minha Fonte Customizada', sans-serif;
   color: #2a044a;
+  background-color: #cccccc;
   width: 100%;
-  background: linear-gradient(to left, #cccccc  53%, #e6e6e6 50% );
+  /* background: linear-gradient(to left, #cccccc  53%, #e6e6e6 50% ); */
 }
 
 .menu-principal {
