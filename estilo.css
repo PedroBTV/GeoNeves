@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: 'Minha Fonte Customizada';
   src: url(codec-pro.italic.ttf);
   font-weight: normal;
@@ -148,6 +148,7 @@ body {
 
 /* Estilo para o container principal */
 .container-principal {
+  display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
     display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
     gap: 66px; /* Isso empurra os blocos para as extremidades (um pra cada lado). */
                      /* Cria um espaço seguro entre eles, caso a tela fique apertada. */
@@ -165,7 +166,17 @@ body {
     border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
 
 }
+<<<<<<< HEAD
 
+=======
+.bloco-esquerda1{
+  width: 100%;
+  border: 2px solid #1e3a70;
+  border-radius: 20px;
+  padding: 30px;
+  
+}
+>>>>>>> ccec5f9035c2d87dbddce0146b1c75106720f32e
 .fonte29 {
   font-size: 30px;
 }
@@ -174,4 +185,3 @@ body {
   font-weight: bolder;
   font-size: 37px;
 }
-
