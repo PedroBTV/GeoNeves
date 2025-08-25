@@ -166,12 +166,16 @@ body {
     border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
 
 }
-.bloco-esquerda1{
-  width: 100%;
-  border: 2px solid #1e3a70;
-  border-radius: 20px;
-  padding: 30px;
-  
+.bloco-esquerda1,
+.bloco-direita1 {
+
+   
+    width: 100%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
+    padding: 30px; /* Um espaçamento interno para o texto não colar na borda. */
+    border: 2px solid #1e3a70; /* Uma bordinha pra gente visualizar os blocos. */
+    border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
+    gap: 12px;  
+
 }
 .fonte29 {
   font-size: 30px;
