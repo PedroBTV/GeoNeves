@@ -103,80 +103,51 @@ body {
   height: auto;
 }
 
-.container-pai {
-    display: flex;
-    justify-content: flex-start; /* A mágica acontece aqui! */
-    
-    /* Apenas para visualização */
-    border: 0px dashed gray;
-    padding: 10px;
-
-}
-
-.bloco-de-texto {
-    width: 400px; /* Um tamanho fixo pro nosso bloco */
-    text-align: left;
-    /* Apenas para visualização */
-
-    padding: 0px;
-    border: 1px solid #ccc;
-}
-
-
-/* parte de baixo*/
 
 
 
-.container-paii {
-    display: flex;
-    justify-content: flex-end; /* A mágica acontece aqui! */
-    
-    /* Apenas para visualização */
-    border: 0px dashed gray;
-    padding: 10px;
 
-}
-
-.bloco-de-textoii {
-    width: 400px; /* Um tamanho fixo pro nosso bloco */
-
-    /* Apenas para visualização  1 */
-
-    padding: 0px;
-    border: 1px solid #ccc;
-}
 
 /* Estilo para o container principal */
-.container-principal {
-  display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
-    display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
-    gap: 66px; /* Isso empurra os blocos para as extremidades (um pra cada lado). */
-                     /* Cria um espaço seguro entre eles, caso a tela fique apertada. */
-    padding: 25px;
+.container-baixo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
 }
 
-/* Estilo que será aplicado a AMBOS os blocos */
-.bloco-esquerda,
-.bloco-direita {
-
-  
-    width: 200%; /* Definimos que cada bloco ocupa um pouco menos da metade do espaço. */
-    padding: 30px; /* Um espaçamento interno para o texto não colar na borda. */
-    border: 2px solid #1e3a70; /* Uma bordinha pra gente visualizar os blocos. */
-    border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
-
-}
-<<<<<<< HEAD
-
-=======
-.bloco-esquerda1{
-  width: 100%;
+/* QUADROS DE BAIXO */
+.quadro-esquerda,
+.quadro-direita {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
   border: 2px solid #1e3a70;
-  border-radius: 20px;
-  padding: 30px;
-  
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
->>>>>>> ccec5f9035c2d87dbddce0146b1c75106720f32e
+.quadro-esquerda1,
+.quadro-direita1 {
+  max-width: 1532px;   /* ajuste se quiser mais estreito/largo */
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  
+  
+  padding: 30px 0;       /* padding vertical; lateral fica na .wrap */
+  border-bottom: 4px solid #15325c;
+  margin-bottom: 20px;
+  flex: 1;
+  justify-content: space-between;
+  width: 98%;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #1e3a70;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+
 .fonte29 {
   font-size: 30px;
 }
@@ -184,4 +155,15 @@ body {
   font-family: 'Minha Fonte Customizada2';
   font-weight: bolder;
   font-size: 37px;
+}
+
+@media (max-width: 768px) {
+  .container-baixo {
+    flex-direction: column;
+  }
+
+  .quadro-esquerda,
+  .quadro-direita {
+    width: 100%;
+  }
 }
