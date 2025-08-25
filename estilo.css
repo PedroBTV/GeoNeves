@@ -148,7 +148,7 @@ body {
 
 /* Estilo para o container principal */
 .container-principal {
-  display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
+    display: flex;                  /* A MÁGICA ACONTECE AQUI! Ativa o modo Flexbox. */
    /* Isso empurra os blocos para as extremidades (um pra cada lado). */
     gap: 62px;                      /* Cria um espaço seguro entre eles, caso a tela fique apertada. */
     padding: 25px;
