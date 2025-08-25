@@ -1,28 +1,37 @@
-/* Zera todo o espaçamento padrão do navegador */
+@font-face {
+  font-family: 'Minha Fonte Customizada';
+  src: url(codec-pro.italic.ttf);
+  font-weight: normal;
+  font-style: normal;
+  }
+  @font-face {
+    font-family: 'Minha Fonte Customizada2';
+    src: url(brillant.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
   margin: 0;
   font-family: 'Minha Fonte Customizada', sans-serif;
   color: #2a044a;
   width: 100%;
-  background-color: #ffffff;
+  background: linear-gradient(to left, #cccccc  53%, #e6e6e6 50% );
 }
 
-/* Menu principal */
 .menu-principal {
   background-color: #1e3a70;
-  padding: 10px 0; /* Reduzi o padding */
+  padding: 10px 0; 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-/* Links do menu principal */
 .menu-principal ul {
   list-style: none;
   display: flex;
@@ -46,12 +55,12 @@ body {
   text-decoration: underline;
 }
 
-/* Menu de três pontinhos */
+
 .menu-tres-pontinhos {
-  position: absolute; /* Fixamos o posicionamento */
-  top: 0px; /* Agora ele fica certinho */
+  position: absolute; 
+  top: 0px;
   left: 15px;
-  z-index: 1000; /* Garante que o botão fique acima da imagem */
+  z-index: 1000; 
 }
 
 .menu-btn {
@@ -62,7 +71,7 @@ body {
   cursor: pointer;
 }
 
-/* Dropdown do menu */
+
 .menu-dropdown {
   display: none;
   position: absolute;
@@ -155,8 +164,10 @@ body {
     border-radius: 20px; /* Bordas arredondadas pra ficar mais bonito. */
 }
 .fonte29 {
-font-size: 25px;
+  font-size: 30px;
 }
-.fonte60 {
-font-size: 40px;
+.fontetitulo {
+  font-family: 'Minha Fonte Customizada2';
+  font-weight: bolder;
+  font-size: 37px;
 }
