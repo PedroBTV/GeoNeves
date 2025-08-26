@@ -1,42 +1,20 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 @font-face {
-  font-family: 'Minha Fonte Customizada';
-  src: url(codec-pro.italic.ttf);
-  font-weight: normal;
-  font-style: normal;
-  }
-  @font-face {
     font-family: 'Minha Fonte Customizada2';
     src: url(brillant.otf);
     font-weight: normal;
     font-style: normal;
   }
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 * {
   margin: 1;
   padding: 0;
   box-sizing: border-box;
-}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 body {
   margin: 0;
   font-family: 'Minha Fonte Customizada', sans-serif;
   color: #2a044a;
   background-color: #cccccc;
   width: 100%;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   /* background: linear-gradient(to left, #cccccc  53%, #e6e6e6 50% ); */
 }
 
@@ -45,22 +23,16 @@ body {
   padding: 10px 0; 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-=======
   background: linear-gradient(to right, #e6e6e6 50%, #cccccc 50%)
 }
 .menu-principal {
   background-color: #1e3a70;
   padding: 10px 0;
-
->>>>>>> Stashed changes
-=======
   background: linear-gradient(to right, #e6e6e6 50%, #cccccc 50%)
 }
 .menu-principal {
   background-color: #1e3a70;
   padding: 10px 0;
-
->>>>>>> Stashed changes
 }
 
 .menu-principal ul {
@@ -86,8 +58,6 @@ body {
 .menu-principal a:hover {
   text-decoration: underline;
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
 
 .menu-tres-pontinhos {
@@ -95,20 +65,18 @@ body {
   top: 0px;
   left: 15px;
   z-index: 1000; 
-=======
+}
+.menu-tres-pontinhos{  
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  z-index: 1000;}
+
 .menu-tres-pontinhos {
   position: absolute;
   top: 0px;
   left: 15px;
   z-index: 1000;
->>>>>>> Stashed changes
-=======
-.menu-tres-pontinhos {
-  position: absolute;
-  top: 0px;
-  left: 15px;
-  z-index: 1000;
->>>>>>> Stashed changes
 }
 
 
@@ -120,28 +88,15 @@ body {
   cursor: pointer;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 .menu-dropdown {
   display: none;
   position: absolute;
   left: 0;
   margin-top: 5px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   background-color: #a0c55f;
   border: 1px solid #728b47;
-=======
-=======
->>>>>>> Stashed changes
   background-color: #c5f27e;
   border: 1px solid #ccc;
->>>>>>> Stashed changes
   border-radius: 5px;
   min-width: 160px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -156,15 +111,8 @@ body {
 }
 
 .menu-dropdown a:hover {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   background-color: #728b47;
-=======
   background-color: #91b35c;
->>>>>>> Stashed changes
-=======
-  background-color: #91b35c;
->>>>>>> Stashed changes
 }
 .fundo img {
   display: block;
@@ -172,7 +120,6 @@ body {
   height: auto;
 }
 
-<<<<<<< Updated upstream
 
 
 
@@ -195,7 +142,7 @@ body {
   border: 2px solid #1e3a70;
   border-radius: 15px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-=======
+}
 .container-pai {
     display: flex;
     justify-content: flex-start;
@@ -238,10 +185,7 @@ body {
     border: 2px solid #1e3a70;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(28, 28, 28)
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 }
 .quadro-esquerda1,
 .quadro-direita1 {
@@ -268,7 +212,6 @@ body {
 .fonte29 {
   font-size: 30px;
 }
-<<<<<<< Updated upstream
 .fontetitulo {
   font-family: 'Minha Fonte Customizada2';
   font-weight: bolder;
@@ -325,12 +268,12 @@ body {
 @media (max-width: 768px) {
   .container-baixo {
     flex-direction: column;
-  }
+  }}
 
 .quadro-esquerda,
 .quadro-direita {
   width: 100%;
-=======
+}
 .fonte60 {
 font-size: 40px;
 }
@@ -372,8 +315,4 @@ font-size: 40px;
   border-radius: 50%;
   z-index: 1;
   left: -14px; 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
