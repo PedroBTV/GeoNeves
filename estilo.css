@@ -19,22 +19,11 @@ body {
 }
 
 .menu-principal {
-  background-color: #1e3a70;
+  background-color: #15325c;
   padding: 10px 0; 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background: linear-gradient(to right, #e6e6e6 50%, #cccccc 50%)
 }
-.menu-principal {
-  background-color: #1e3a70;
-  padding: 10px 0;
-  background: linear-gradient(to right, #e6e6e6 50%, #cccccc 50%)
-}
-.menu-principal {
-  background-color: #1e3a70;
-  padding: 10px 0;
-}
-
 .menu-principal ul {
   list-style: none;
   display: flex;
@@ -265,6 +254,14 @@ body {
   font-size: 13px;
   margin-top: 10px;
 }
+.quadro-esquerda,
+.quadro-direita {
+  width: 100%;
+}
+.fonte60 {
+font-size: 40px;
+}
+
 @media (max-width: 768px) {
   .container-baixo {
     flex-direction: column;
@@ -308,10 +305,3 @@ body {
   left: -14px; 
 }
 
-.quadro-esquerda,
-.quadro-direita {
-  width: 100%;
-}
-.fonte60 {
-font-size: 40px;
-}
