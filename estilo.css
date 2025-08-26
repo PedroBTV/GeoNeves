@@ -270,20 +270,11 @@ body {
   .container-baixo {
     flex-direction: column;
   }}
-
-.quadro-esquerda,
-.quadro-direita {
-  width: 100%;
-}
-.fonte60 {
-font-size: 40px;
-}
 .timeline {
   margin: 0; 
-
   position: relative;
   width: 50%;
-  left: 5%;
+  left: 25%;
 }
 .timeline ul::after {
   content: '';
@@ -316,4 +307,12 @@ font-size: 40px;
   border-radius: 50%;
   z-index: 1;
   left: -14px; 
+}
+
+.quadro-esquerda,
+.quadro-direita {
+  width: 100%;
+}
+.fonte60 {
+font-size: 40px;
 }
