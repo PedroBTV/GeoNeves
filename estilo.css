@@ -1,9 +1,21 @@
+
+
+/* Fontes - Bia e Pedro */
+
+
+
 @font-face {
     font-family: 'Minha Fonte Customizada2';
     src: url(brillant.otf);
     font-weight: normal;
     font-style: normal;
   }
+
+
+
+
+
+
 * {
   margin: 1;
   padding: 0;
@@ -18,6 +30,9 @@ body {
   width: 100%;
   /* background: linear-gradient(to left, #cccccc  53%, #e6e6e6 50% ); */
 }
+
+
+/* Barra De Navegação */ 
 
 .menu-principal {
   background-color: #15325c;
@@ -55,6 +70,7 @@ body {
   text-decoration: underline;
 }
 
+/*Três Pontinhos*/
 
 .menu-tres-pontinhos {
   position: absolute; 
@@ -115,6 +131,9 @@ body {
   width: 100%;
   height: auto;
 }
+
+/*Quadros de Texto*/
+
 /* Estilo para o container principal */
 .container-baixo {
   display: flex;
@@ -133,14 +152,14 @@ body {
   border-radius: 15px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
-.container-pai {
+ /* .container-pai {
     display: flex;
     justify-content: flex-start;
     border: 0px dashed gray;
     padding: 10px;
 
 }
-
+*/
 .bloco-de-texto {
     width: 400px; 
     text-align: left;
@@ -198,6 +217,9 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   gap: 10px;
 }
+
+
+/* --------------------------*/
 
 .fonte29 {
   font-size: 30px;
@@ -267,6 +289,8 @@ font-size: 40px;
   .container-baixo {
     flex-direction: column;
   }}
+
+/* Linha Do Tempo*/
 .timeline {
   margin: 0; 
   position: relative;
