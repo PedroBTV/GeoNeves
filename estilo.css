@@ -26,13 +26,46 @@ body {
   margin: 0;
   font-family: 'Minha Fonte Customizada', sans-serif;
   color: #2a044a;
-  background-color: #cccccc;
+  background-color: #ffffff;
+
   width: 100%;
   /* background: linear-gradient(to left, #cccccc  53%, #e6e6e6 50% ); */
 }
 
+/* Links dentro da offcanvas */
+#offcanvasDarkNavbar .nav-link {
+  color: rgb(0, 0, 0) !important; /* força branco */
+}
+
+/* Hover */
+#offcanvasDarkNavbar .nav-link:hover {
+  color: #15325c !important; /* laranja */
+  font-weight: bold;
+}
+
+/* Título */
+#offcanvasDarkNavbar .offcanvas-title {
+  color: rgb(0, 0, 0) !important;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+    /* ... outros estilos ... */
+    /* border: 1px solid #dee2e6; Removido */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adicionada a sombra */
+    transition: 0.3s; /* Adicionado para um efeito suave ao passar o mouse */
+}
+.content:hover { /* Opcional: efeito de sombra maior ao passar o mouse */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 /* Barra De Navegação */ 
+
+.minha-navbar {
+  background-color: #15325c; /* laranja */
+}
+
 
 .menu-principal {
   background-color: #15325c;
@@ -130,6 +163,30 @@ body {
   display: block;
   width: 100%;
   height: auto;
+}
+
+
+/* --- CÓDIGO DA IMAGEM DE TELA CHEIA --- */
+
+.hero-section {
+    position: relative;
+    
+    /* !! COLOQUE O NOME DA SUA IMAGEM AQUI !! */
+    background-image: url('PI.png');
+    
+    background-size: cover;
+    background-position: center;
+    /* As outras propriedades de layout foram para o HTML! */
+}
+
+
+
+
+/* Ajuste para telas menores (continua igual) */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 5rem;
+    }
 }
 
 /*Quadros de Texto*/
@@ -244,11 +301,7 @@ body {
   background: linear-gradient(#1e3a70, #a0c55f);
   border-radius: 50px;
 }
-.container{
-  width: 50%;
-  position: relative;
-  padding: 10px 20px;
-}
+
 .container:nth-child(even){
   right: -50%;
   
