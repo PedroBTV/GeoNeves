@@ -171,12 +171,11 @@ body {
 .hero-section {
     position: relative;
     
-    /* !! COLOQUE O NOME DA SUA IMAGEM AQUI !! */
     background-image: url('PI.png');
     
     background-size: cover;
     background-position: center;
-    /* As outras propriedades de layout foram para o HTML! */
+
 }
 
 
@@ -248,7 +247,7 @@ body {
 
     width: 200%;
     padding: 30px;
-    border: 2px solid #1e3a70;
+    border: 2px solid rgb(58, 57, 57);
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(28, 28, 28)
 
@@ -262,7 +261,7 @@ body {
   
   
   padding: 30px 0;       /* padding vertical; lateral fica na .wrap */
-  border-bottom: 4px solid #15325c;
+  border-bottom: 1px solid rgb(53, 52, 52);
   margin-bottom: 20px;
   flex: 1;
   justify-content: space-between;
@@ -413,9 +412,7 @@ font-size: 40px;
 }
 
 /*
-* ===============================================
 * ESTILOS DA LINHA DO TEMPO COM CLASSES ÚNICAS
-* ===============================================
 */
 
 .neves-timeline {
