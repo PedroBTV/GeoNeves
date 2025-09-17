@@ -258,8 +258,6 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   width: 100%;
-  
-  
   padding: 30px 0;       /* padding vertical; lateral fica na .wrap */
   border-bottom: 1px solid rgb(53, 52, 52);
   margin-bottom: 20px;
@@ -268,7 +266,7 @@ body {
   width: 98%;
   background-color: white;
   padding: 20px;
-  border: 2px solid #1e3a70;
+  border: 1px solid #9e9fa1;
   border-radius: 15px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   gap: 10px;
