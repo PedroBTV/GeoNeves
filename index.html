@@ -11,224 +11,218 @@
 
 
     <style>
-        .hero {
-            height: 100vh;
-            /* ocupa 100% da tela */
-            background-image: url('PI.png');
-            /* coloque sua imagem na pasta img */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            /* efeito parallax */
-        }
+    .hero img {
+    height: 100vh; /* ocupa toda a altura da tela */
+    width: 100%; /* ocupa toda a largura */
+    object-fit: cover; /* corta a imagem sem distorcer */
+    }
     </style>
 </head>
 
 <body>
 
-    <!-- Apenas a imagem de capa -->
-    <section class="hero"></section>
-    </head>
+    <!-- Capa responsiva -->
+    <section class="hero">
+        <img src="PI.png" class="img-fluid" alt="Capa do site">
+    </section>
 
-    <body>
+    <nav class="navbar navbar-dark fixed-top minha-navbar">
+        <div class="container-fluid">
+            <br>
+            <a class="navbar-brand" href="index.html">GeoNeves</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GeoNeves</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenos.html">Sobre Nos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mapeamento
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
 
-        <nav class="navbar navbar-dark fixed-top minha-navbar">
-            <div class="container-fluid">
-                <br>
-                <a class="navbar-brand" href="index.html">GeoNeves</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GeoNeves</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="sobrenos.html">Sobre Nos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Mapeamento
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="mapeamento.html">Mapa Interativo</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSdYl613Mg56Tpz-lGUt1SWmPzPKPmuBd-krqKEESM5OdWkZZA/viewform?usp=dialog">Colaborar
+                                        Com O Mapa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                                    <li><a class="dropdown-item" href="#"></a></li>
-                                    <li><a class="dropdown-item" href="mapeamento.html">Mapa Interativo</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSdYl613Mg56Tpz-lGUt1SWmPzPKPmuBd-krqKEESM5OdWkZZA/viewform?usp=dialog">Colaborar
-                                            Com O Mapa</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    </div>
                 </div>
             </div>
-        </nav>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 
 
-        <!-- Caixinhas dos textos-->
+    <!-- Caixinhas dos textos-->
 
 
 
-        <div class="container my-5">
-            <!-- Sobre o Projeto -->
-            <div class="card-custom mb-5">
+    <div class="container my-5">
+        <!-- Sobre o Projeto -->
+        <div class="card-custom mb-5">
 
+            <div class="card-custom h-100 mapa-container">
+                <h2 class="titulo, fontetitulo">Mapa de Neves</h2>
+                <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1kRx7N9ejO6RWOkFzMLhUQ616jwjsKsQ&ehbc=2E312F&noprof=1"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- Blocos Ribeirão das Neves e Mapa -->
+        <div class="row g-4">
+            <!-- Bloco Esquerdo: História -->
+            <div class="col-md-6">
+                <div class="card-custom h-100">
+                    <h2 class="titulo, fontetitulo">Ribeirão das Neves</h2>
+                    <p class="descricao">
+                        Ribeirão das Neves começou como um pequeno povoado rural no século XIX, em torno de fazendas
+                        e
+                        trilhas que ligavam a região ao centro de Minas Gerais. O nome vem de um ribeirão que
+                        cortava a
+                        área e das frequentes neblinas (ou "neves") que cobriam a matas da região.
+                        Com o tempo, a cidade cresceu principalmente a partir da década de 1950, acompanhando a
+                        expansão
+                        da Região Metropolitana de Belo Horizonte. Em 1953, Ribeirão das Neves se tornou
+                        oficialmente um
+                        município.
+                        Durante muitos anos, a cidade ficou conhecida por abrigar grandes unidades prisionais. Mas,
+                        além
+                        disso, Neves é feita por sua gente trabalhadora, sua cultura popular e seus bairros que
+                        continuam se desenvolvendo com escolas, praças, comércios e iniciativas comunitárias.
+                        Hoje, é uma cidade viva e diversa, que busca crescer com mais oportunidades, participação
+                        cidadã
+                        e consciência sobre seu território.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bloco Direito: Mapa -->
+            <div class="col-md-6">
                 <div class="card-custom h-100 mapa-container">
-                    <h2 class="titulo, fontetitulo">Mapa de Neves</h2>
-                    <iframe
-                        src="https://www.google.com/maps/d/embed?mid=1kRx7N9ejO6RWOkFzMLhUQ616jwjsKsQ&ehbc=2E312F&noprof=1"
-                        allowfullscreen></iframe>
+                    <h2 class="titulo, fontetitulo">Sobre o Projeto</h2>
+                    <p class="descricao">
+                        Explore Ribeirão das Neves de uma forma diferente! Este site apresenta um mapa interativo
+                        com pontos
+                        importantes e curiosos da cidade, conectando o cotidiano local aos conteúdos da BNCC. A
+                        proposta une
+                        Geografia e cidadania, incentivando uma leitura crítica do território. Navegue, descubra e
+                        repense a
+                        cidade onde vivemos!
+                    </p>
                 </div>
-
             </div>
+        </div>
+    </div>
+    <div class="container my-5">
 
-            <!-- Blocos Ribeirão das Neves e Mapa -->
-            <div class="row g-4">
-                <!-- Bloco Esquerdo: História -->
-                <div class="col-md-6">
-                    <div class="card-custom h-100">
-                        <h2 class="titulo, fontetitulo">Ribeirão das Neves</h2>
-                        <p class="descricao">
-                            Ribeirão das Neves começou como um pequeno povoado rural no século XIX, em torno de fazendas
-                            e
-                            trilhas que ligavam a região ao centro de Minas Gerais. O nome vem de um ribeirão que
-                            cortava a
-                            área e das frequentes neblinas (ou "neves") que cobriam a matas da região.
-                            Com o tempo, a cidade cresceu principalmente a partir da década de 1950, acompanhando a
-                            expansão
-                            da Região Metropolitana de Belo Horizonte. Em 1953, Ribeirão das Neves se tornou
-                            oficialmente um
-                            município.
-                            Durante muitos anos, a cidade ficou conhecida por abrigar grandes unidades prisionais. Mas,
-                            além
-                            disso, Neves é feita por sua gente trabalhadora, sua cultura popular e seus bairros que
-                            continuam se desenvolvendo com escolas, praças, comércios e iniciativas comunitárias.
-                            Hoje, é uma cidade viva e diversa, que busca crescer com mais oportunidades, participação
-                            cidadã
-                            e consciência sobre seu território.
-                        </p>
+        <div class="card-custom mb-5">
+
+            <h2 class="fontetitulo text-center mb-5">Linha do Tempo de Neves:</h2>
+
+            <div class="neves-timeline">
+
+                <div class="neves-timeline__item neves-timeline__item--left">
+                    <div class="neves-timeline__content">
+                        <h2>1745 - 1765</h2>
+                        <p>Fundação da Fazenda das Neves e construção da capela de Nossa Senhora das Neves.</p>
                     </div>
                 </div>
 
-                <!-- Bloco Direito: Mapa -->
-                <div class="col-md-6">
-                    <div class="card-custom h-100 mapa-container">
-                        <h2 class="titulo, fontetitulo">Sobre o Projeto</h2>
-                        <p class="descricao">
-                            Explore Ribeirão das Neves de uma forma diferente! Este site apresenta um mapa interativo
-                            com pontos
-                            importantes e curiosos da cidade, conectando o cotidiano local aos conteúdos da BNCC. A
-                            proposta une
-                            Geografia e cidadania, incentivando uma leitura crítica do território. Navegue, descubra e
-                            repense a
-                            cidade onde vivemos!
-                        </p>
+                <div class="neves-timeline__item neves-timeline__item--right">
+                    <div class="neves-timeline__content">
+                        <h2>1827 - 1830</h2>
+                        <p>Elevação a Distrito de Paz.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--left">
+                    <div class="neves-timeline__content">
+                        <h2>1846</h2>
+                        <p>Rebaixamento e Anexação a Venda Nova.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--right">
+                    <div class="neves-timeline__content">
+                        <h2>1911</h2>
+                        <p>Passa a integrar o município de Contagem.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--left">
+                    <div class="neves-timeline__content">
+                        <h2>1927 - 1938</h2>
+                        <p>Construção e inauguração da Penitenciária Agrícola de Neves.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--right">
+                    <div class="neves-timeline__content">
+                        <h2>1943</h2>
+                        <p>Ganha o nome atual e passa a Pedro Leopoldo.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--left">
+                    <div class="neves-timeline__content">
+                        <h2>1953 - 1954</h2>
+                        <p>Criação do município de Ribeirão das Neves.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--right">
+                    <div class="neves-timeline__content">
+                        <h2>1970 - 1980</h2>
+                        <p>Forte Crescimento populacional e urbanização.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--left">
+                    <div class="neves-timeline__content">
+                        <h2>2011</h2>
+                        <p>Veneza é elevado a distrito.</p>
+                    </div>
+                </div>
+
+                <div class="neves-timeline__item neves-timeline__item--right">
+                    <div class="neves-timeline__content">
+                        <h2>2016</h2>
+                        <p>Inauguração do Terminal Justinópolis e reconhecimento da comunidade quilombola do
+                            Rosário.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container my-5">
+    </div>
 
-            <div class="card-custom mb-5">
-
-                <h2 class="fontetitulo text-center mb-5">Linha do Tempo de Neves:</h2>
-
-                <div class="neves-timeline">
-
-                    <div class="neves-timeline__item neves-timeline__item--left">
-                        <div class="neves-timeline__content">
-                            <h2>1745 - 1765</h2>
-                            <p>Fundação da Fazenda das Neves e construção da capela de Nossa Senhora das Neves.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--right">
-                        <div class="neves-timeline__content">
-                            <h2>1827 - 1830</h2>
-                            <p>Elevação a Distrito de Paz.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--left">
-                        <div class="neves-timeline__content">
-                            <h2>1846</h2>
-                            <p>Rebaixamento e Anexação a Venda Nova.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--right">
-                        <div class="neves-timeline__content">
-                            <h2>1911</h2>
-                            <p>Passa a integrar o município de Contagem.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--left">
-                        <div class="neves-timeline__content">
-                            <h2>1927 - 1938</h2>
-                            <p>Construção e inauguração da Penitenciária Agrícola de Neves.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--right">
-                        <div class="neves-timeline__content">
-                            <h2>1943</h2>
-                            <p>Ganha o nome atual e passa a Pedro Leopoldo.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--left">
-                        <div class="neves-timeline__content">
-                            <h2>1953 - 1954</h2>
-                            <p>Criação do município de Ribeirão das Neves.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--right">
-                        <div class="neves-timeline__content">
-                            <h2>1970 - 1980</h2>
-                            <p>Forte Crescimento populacional e urbanização.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--left">
-                        <div class="neves-timeline__content">
-                            <h2>2011</h2>
-                            <p>Veneza é elevado a distrito.</p>
-                        </div>
-                    </div>
-
-                    <div class="neves-timeline__item neves-timeline__item--right">
-                        <div class="neves-timeline__content">
-                            <h2>2016</h2>
-                            <p>Inauguração do Terminal Justinópolis e reconhecimento da comunidade quilombola do
-                                Rosário.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </body>
+</body>
 
 </html>
