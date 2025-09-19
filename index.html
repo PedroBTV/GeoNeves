@@ -11,20 +11,40 @@
 
 
     <style>
-    .hero img {
-    height: 100vh; /* ocupa toda a altura da tela */
-    width: 100%; /* ocupa toda a largura */
-    object-fit: cover; /* corta a imagem sem distorcer */
-    }
+        /* --- Versão PC (padrão) --- */
+        .hero {
+            height: 100vh;
+            background-image: url('PI.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* --- Versão Celular --- */
+        @media (max-width: 768px) {
+            .hero {
+                background: none;
+                /* remove o background */
+                height: auto;
+            }
+
+            .hero img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Capa responsiva -->
+    <!-- Capa -->
     <section class="hero">
-        <img src="PI.png" class="img-fluid" alt="Capa do site">
+        <!-- imagem só aparece no celular -->
+        <img src="FotoZayon.jpg" class="img-fluid d-md-none" alt="Capa do site">
     </section>
+
 
     <nav class="navbar navbar-dark fixed-top minha-navbar">
         <div class="container-fluid">
