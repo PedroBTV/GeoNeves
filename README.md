@@ -17,9 +17,12 @@ e 2025-09-23 at 11 04 46 (1)](https://github.com/user-attachments/assets/ab4fa2c
 ### Link para o fluxo de navegação:
  🠒 https://www.canva.com/design/DAGuZPGI4FA/mSUrgz0y2Uiu_TXzS-DGQw/view?utm_content=DAGuZPGI4FA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4ba35444e3
 ## Autores:
- 🠒 Beatriz Nunes: https://github.com/theycallmebtz
- 🠒 Clara Batista: https://github.com/rochacl
- 🠒 Julia Nogueira: https://github.com/pinkjonie
- 🠒 Letia Vitoria: https://github.com/letzinha44ze
- 🠒 Pedro Antônio: https://github.com/PedroBTV
- 🠒 Pedro Mendes: https://github.com/Pedroxllx
+* 🠒 Beatriz Nunes: https://github.com/theycallmebtz
+* 🠒 Clara Batista: https://github.com/rochacl
+* 🠒 Julia Nogueira: https://github.com/pinkjonie
+* 🠒 Letia Vitoria: https://github.com/letzinha44ze
+* 🠒 Pedro Antônio: https://github.com/PedroBTV
+* 🠒 Pedro Mendes: https://github.com/Pedroxllx
+* 🠒 Rafaella Campos: https://github.com/rafacampos6477                                                                                
+* 🠒 Yasmim Zan: https://github.com/yaswz1
+* 🠒 Zayon Assunção: https://github.com/Zaium
